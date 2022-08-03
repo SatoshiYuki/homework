@@ -1,0 +1,12 @@
+{
+    "LINE": {
+        "CHANNEL_SECRET": "0efea3e06a6bdf3e4392b088bd4057cc",
+        "CHANNEL_ACCESS_TOKEN": "Yu4F/oOxMcde6biciSAhxF+657RxtQs0xTwOxOnuoZ5JNyF8T2RaSfpdB+ptAugJS9NvLLKr/h5XCCqdPh/L4IshqJ/b9EAej7maMt2ukhKdZULupZetyC2C+wpS2QIfBu7OEx7B43oSXlFjG8Z33wdB04t89/1O/w1cDnyilFU="
+    },
+    "MongoDB": {
+        "Host": "127.0.0.1:27017",
+        "Username": "admin",
+        "Password": "password123",
+        "DB": "homework"
+    }  
+} 
