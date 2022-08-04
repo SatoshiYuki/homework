@@ -8,5 +8,9 @@ mod:
 	go mod init
 	go mod tidy
 
-main:
+goFile:
 	echo package main > main.go
+	mkdir mongoDB
+	echo package mongoDB > mongoDB/mongoDB.go
+	mkdir models
+	echo package models > models/models.go
