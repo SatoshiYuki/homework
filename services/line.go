@@ -21,7 +21,6 @@ func RecieveMessage(context *gin.Context) {
 		fmt.Println(err)
 	}
 
-	// 接收請求
 	events, err := client.ParseRequest(context.Request)
 
 	if err != nil {
