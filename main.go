@@ -10,11 +10,11 @@ import (
 
 func main() {
 	initConfig()
-	//fmt.Println(viper.GetString("MongoDB.Host"))
-	//mongoDB.DbConnect()
 
 	router := gin.Default()
-	router.POST("/callback", services.RecieveMessage)
+	router.POST("/homework/recieveMessage", services.RecieveMessage)
+	router.POST("/homework/sendMessage", services.SendMessage)
+	router.GET("/test", test)
 	router.Run(":80")
 
 }
@@ -30,8 +30,7 @@ func initConfig() {
 
 func test(context *gin.Context) {
 	context.JSON(http.StatusOK, gin.H{
-		"amount":  123,
-		"status":  "ok",
+		"status":  "200",
 		"message": "test123",
 	})
 }

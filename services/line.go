@@ -52,3 +52,18 @@ func RecieveMessage(context *gin.Context) {
 		}
 	}
 }
+
+func SendMessage(context *gin.Context) {
+
+	client, err = linebot.New(viper.GetString("LINE.CHANNEL_SECRET"), viper.GetString("LINE.CHANNEL_ACCESS_TOKEN"))
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	message := context.Query("message")
+
+	_, err := client.PushMessage("U3e39106ee2de0697b17e6c27e641fe7f", linebot.NewTextMessage(message)).Do()
+	if err != nil {
+		panic(err)
+	}
+}
