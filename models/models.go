@@ -1,6 +1,6 @@
 package models
 
-type MongoDB struct {
-	User    string `json:"user"`
+type Message struct {
+	UserId  string `json:"user"`
 	Message string `json:"message"`
 }
