@@ -1,164 +1,124 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.82.90
-# Built for i686-pc-mingw32
-# Copyright (C) 1988-2012 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
- 
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
 
-# Make data base, printed on Wed Aug 03 21:43:32 2022
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Fri Aug  5 14:47:16 2022
 
 # Variables
 
 # automatic
-<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+<D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# default
-.SHELLFLAGS := -c
-# makefile
-MAKEFLAGS = Rrqp
-# automatic
-?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
-# automatic
-@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-HOMEDRIVE = C:
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
-# automatic
-^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/user/Desktop/myProgram/go/src/homework
-# default
-SHELL := sh.exe
+CURDIR := /Users/kiva_yang/go/src/homework
+# makefile
+SHELL = /bin/sh
 # environment
-WINDIR = C:\WINDOWS
+VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"ac66bbc6dbbb1314a06c6472917732ef.zh-tw","_translationsConfigFile":"/Users/kiva_yang/Library/Application Support/Code/clp/ac66bbc6dbbb1314a06c6472917732ef.zh-tw/tcf.json","_cacheRoot":"/Users/kiva_yang/Library/Application Support/Code/clp/ac66bbc6dbbb1314a06c6472917732ef.zh-tw","_resolvedLanguagePackCoreLocation":"/Users/kiva_yang/Library/Application Support/Code/clp/ac66bbc6dbbb1314a06c6472917732ef.zh-tw/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/Users/kiva_yang/Library/Application Support/Code/clp/ac66bbc6dbbb1314a06c6472917732ef.zh-tw/corrupted.info","_languagePackSupport":true}
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"a0b772d00248b7f5c117cab9736199be.zh-tw","_translationsConfigFile":"C:\\Users\\user\\AppData\\Roaming\\Code\\clp\\a0b772d00248b7f5c117cab9736199be.zh-tw\\tcf.json","_cacheRoot":"C:\\Users\\user\\AppData\\Roaming\\Code\\clp\\a0b772d00248b7f5c117cab9736199be.zh-tw","_resolvedLanguagePackCoreLocation":"C:\\Users\\user\\AppData\\Roami 
-ng\\Code\\clp\\a0b772d00248b7f5c117cab9736199be.zh-tw\\3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"C:\\Users\\user\\AppData\\Roaming\\Code\\clp\\a0b772d00248b7f5c117cab9736199be.zh-tw\\corrupted.info","_languagePackSupport":true}
-# environment
-ONEDRIVE = C:\Users\user\OneDrive
-# environment
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# makefile (from 'Makefile', line 1)
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
-TMP = C:\Users\user\AppData\Local\Temp
-# environment
-PROGRAMW6432 = C:\Program Files
-# environment
-PROGRAMDATA = C:\ProgramData
-# environment
-VSCODE_CWD = D:\Microsoft VS Code
-# environment
-PATH = C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\python27;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;D:\python27\Script;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.1.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\user\Desktop\php;C:\ProgramData\ComposerSetup\bin;C:\Users\user\Desktop\php;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Go\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\user\.dotnet\tools;C:\Users\user\AppData\Roaming\npm;C:\Users\user\AppData\Roaming\Composer\vendor\bin;C:\Users\user\go\bin;C:\MinGW\bin;
-# environment
-COMMONPROGRAMW6432 = C:\Program Files\Common Files
-# environment
-PROCESSOR_ARCHITECTURE = x86
-# environment
-USERPROFILE = C:\Users\user
-# environment
-ALLUSERSPROFILE = C:\ProgramData
-# environment
-GOPATH = C:\Users\user\Desktop\myProgram\go
-# environment
-NUMBER_OF_PROCESSORS = 12
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
-# environment
-NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
-# automatic
-%F = $(notdir $%)
-# environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18928_LHWYIZPTUYOAVAQL
-# environment
-COMPUTERNAME = DESKTOP-CRGVITS
-# environment
-PROGRAMFILES = C:\Program Files (x86)
-# environment
-DRIVERDATA = C:\Windows\System32\Drivers\DriverData
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# environment
-USERNAME = kiva
-# environment
-PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\user\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_VERBOSE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/3y/3rstg3j17_54jqsqfhswrvq8grg379/T/vscode-ipc-29fad69d-ceef-4e38-81a8-41980afe89cd.sock
 # environment
-COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+VSCODE_CWD = /
 # environment
-LOGONSERVER = \\DESKTOP-CRGVITS
+GOPROXY = https://proxy.golang.org,direct
+# environment
+PATH = /usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# environment
+GOPATH = /Users/kiva_yang/go
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.7NSU4MFfvJ/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/kiva_yang/go/src/homework
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+GOMODCACHE = /Users/kiva_yang/go/pkg/mod
+# environment
+HOME = /Users/kiva_yang
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/kiva_yang/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LOGNAME = kiva_yang
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
 # environment
-USERDOMAIN = DESKTOP-CRGVITS
-# environment
-MAKELEVEL := 0
+XPC_FLAGS = 0x0
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
+# environment
+SHLVL = 1
 # default
-MAKE_VERSION := 3.82.90
+MAKE_VERSION := 3.81
+# environment
+USER = kiva_yang
 # makefile
-.DEFAULT_GOAL := hello
-# environment
-PROGRAMFILES(X86) = C:\Program Files (x86)
+.DEFAULT_GOAL := initdb
 # automatic
-%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
-# environment
-LOCALAPPDATA = C:\Users\user\AppData\Local
-# environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+%D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := make.exe
-# environment
-PROCESSOR_ARCHITEW6432 = AMD64
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # default
 .VARIABLES := 
+# environment
+TMPDIR = /var/folders/3y/3rstg3j17_54jqsqfhswrvq8grg379/T/
 # automatic
 *F = $(notdir $*)
 # environment
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
-# environment
-OS = Windows_NT
-# environment
-VSCODE_IPC_HOOK = \\.\pipe\680802a3ebd40da3f83beb9d3e841b70-1.69.2-main-sock
-# environment
-HOMEPATH = \Users\user
-# environment
-COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
-# environment
-PROMPT = $P$G
+VSCODE_IPC_HOOK = /Users/kiva_yang/Library/Application Support/Code/1.68.1-main.sock
+# makefile
+MAKEFLAGS = Rrqp
 # environment
 MFLAGS = -Rrqp
 # automatic
-*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+*D = $(patsubst %/,%,$(dir $*))
 # environment
-SYSTEMROOT = C:\WINDOWS
+XPC_SERVICE_NAME = com.microsoft.VSCode.36344
 # automatic
-+D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
++D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-APPDATA = C:\Users\user\AppData\Roaming
-# environment
-TEMP = C:\Users\user\Ap 
-pData\Local\Temp
-# environment
-COMSPEC = C:\WINDOWS\system32\cmd.exe
+__CF_USER_TEXT_ENCODING = 0x1F878CE9:0x2:0x35
 # default
 MAKEFILES := 
 # automatic
@@ -169,30 +129,16 @@ LC_ALL = C
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
-# environment
-SYSTEMDRIVE = C:
-# environment
-SESSIONNAME = Console
-# environment
-PROCESSOR_REVISION = 9e0a
 # default
-.INCLUDE_DIRS = C:/MinGW/include
+.INCLUDE_DIRS = /usr/local/include
 # environment
-FREI0R_PATH = D:\VIDEOC~1\frei0r;D:\Video Converter Studio\frei0r
-# default
-.RECIPEPREFIX := 
+MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-PROCESSOR_LEVEL = 6
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-VSCODE_PID = 18928
-# environment
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-CRGVITS
+VSCODE_PID = 1790
 # variable set hash-table stats:
-# Load=89/1024=9%, Rehash=0, Collisions=11/108=10%
+# Load=63/1024=6%, Rehash=0, Collisions=2/87=2%
 
 # Pattern-specific Variable Values
 
@@ -200,46 +146,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-CRGVITS
 
 # Directories
 
-# : could not be stat'd.
-# C:\ProgramData\DockerDesktop\version-bin: could not be stat'd.
-# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corp 
-oration/NVIDIA NvDLISR, mtime 1570550590): 5 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1656217341): 32 files, no impossibilities.
-# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1656217879): 173 files, no impossibilities.
-# . (key c:/Users/user/Desktop/myProgram/go/src/homework, mtime 1659532732): 7 files, no impossibilities.
-# D:\Microsoft VS Code\bin (key D:/Microsoft VS Code/bin, mtime 1658659606): 4 files, no impossibilities.
-# D:\git\Git\cmd (key D:/git/Git/cmd, mtime 1634354875): 8 files, no impossibilities.
-# C:\MinGW\bin (key C:/MinGW/bin, mtime 1659534194): 54 files, no impossibilities.
-# C:\Users\user\.dotnet\tools: could not be stat'd.
-# C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1659338556): 13 files, no impossibilities.
-# C:\Windows\System32\OpenSSH\: could not be stat'd.
-# C:\Users\user\AppData\Local\Microsoft\WindowsApps (key C:/Users/ 
-user/AppData/Local/Microsoft/WindowsApps, mtime 1659487523): 26 files, no impossibilities.
-# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1528635869): 10 files, no impossibilities.
-# C:\Program Files (x86)\Razer Chroma SDK\bin: could not be stat'd.
-# C:\WINDOWS (key C:/WINDOWS, mtime 1657738815): 125 files, no impossibilities.
-# C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1645541379): 13 files, no impossibilities.
-# C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps: could not be stat'd.
-# C:\Users\user\AppData\Roaming\Composer\vendor\bin (key C:/Users/user/AppData/Roaming/Composer/vendor/bin, mtime 1659284800): 4 files, no impossibilities.
-# C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.1.0\ (key C:/Program Files/NVIDIA Corporation/Nsight Compute 2020.1.0/, mtime 1593266664): 12 files, no impossibilities.
-# C:\Users\user\Desktop\php (key C:/Users/user/Desktop/php, mtime 165928404 
-1): 39 files, no impossibilities.
-# D:\python27\Script: could not be stat'd.
-# C:\Windows (key C:/Windows, mtime 1657738815): 125 files, no impossibilities.
-# C:\Program Files\Go\bin (key C:/Program Files/Go/bin, mtime 1659531913): 4 files, no impossibilities.
-# C:\Users\user\go\bin (key C:/Users/user/go/bin, mtime 1658680316): 19 files, no impossibilities.
-# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1656217879): 173 files, no impossibilities.
-# C:\ProgramData\ComposerSetup\bin (key C:/ProgramData/ComposerSetup/bin, mtime 1659284057): 5 files, no impossibilities.
-# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1652269706): 11 files, no impossibilities.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1656217341): 32 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1659534092): 3119 files, no impossibilities.
-# C:\Users\user\AppData\Roaming\npm (key C:/Users/user/AppData/Roaming/npm, mtime 1645541376): 2 files, no impossibilities.
-# D:\python27: could not be stat'd.
-# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
-# C:\Program Files\Razer Chroma SDK\bin: could not be stat'd.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659534092): 3119 files, no impossibilities.
+# . (device 16777221, inode 121050004): 13 files, no impossibilities.
 
-# 7134 files, no impossibilities in 35 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -247,13 +156,22 @@ user/AppData/Local/Microsoft/WindowsApps, mtime 1659487523): 26 files, no imposs
 
 # Files
 
+config:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 5):
+	echo {} > config.Json
+	
+
 # Not a target:
 all:
-#  Command line target.
+#  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File ha 
-s not been updated.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .SUFFIXES:
@@ -264,16 +182,23 @@ s not been updated.
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-03 21:25:29
+#  Last modified 2022-08-05 11:37:53
 #  File has been updated.
 #  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-hello:
+goFile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	echo "Hello"
+#  commands to execute (from `Makefile', line 12):
+	echo package main > main.go
+	mkdir mongoDB
+	echo package mongoDB > mongoDB/mongoDB.go
+	mkdir models
+	echo package models > models/models.go
+	
 
 # Not a target:
 .DEFAULT:
@@ -281,25 +206,38 @@ hello:
 #  Modification time never checked.
 #  File has not been updated.
 
+mod:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 8):
+	go mod init
+	go mod tidy
+	
+
+initdb:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 2):
+	docker run -itd --name mongo -p 27017:27017 mongo
+	
+
 # files hash-table stats:
-# Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
+# Load=8/1024=1%, Rehash=0, Collisions=0/20=0%
 # VPATH Search Paths
 
-# No 'vpath' search paths.
+# No `vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No general (`VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3657 / storage = 54917 B / avg = 15 B
-# current buf: size = 8174 B / used = 5908 B / count = 359 / avg = 16 B
-# other used: total = 46743 B / count = 3298 / avg = 14 B
-# other free: total =  
-make.exe: *** No rule to make target 'all'.  Stop.
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-35 B / max = 9 B / min = 1 B / avg = 5 B
-
-# strcache performance: lookups = 7177 / hit rate = 49%
-# hash-table stats:
-# Load=3657/8192=45%, Rehash=0, Collisions=2490/7177=35%
-# Finished Make data base on Wed Aug 03 21:43:32 2022
+# Finished Make data base on Fri Aug  5 14:47:16 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+

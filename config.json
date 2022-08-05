@@ -5,8 +5,7 @@
     },
     "MongoDB": {
         "Host": "127.0.0.1:27017",
-        "Username": "admin",
-        "Password": "password123",
-        "DB": "homework"
+        "DB": "homework",
+        "Collection": "message"
     }  
 } 
