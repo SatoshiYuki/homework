@@ -14,7 +14,7 @@ func main() {
 	router := gin.Default()
 	router.POST("/homework/recieveMessage", services.RecieveMessage)
 	router.POST("/homework/sendMessage", services.SendMessage)
-	router.GET("/test", test)
+	router.GET("/homework/queryMessage", services.QueryMessage)
 	router.Run(":80")
 
 }

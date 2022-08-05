@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/line/line-bot-sdk-go/linebot"
 	"github.com/spf13/viper"
+	"gopkg.in/mgo.v2/bson"
 )
 
 var (
@@ -38,16 +39,11 @@ func RecieveMessage(context *gin.Context) {
 		if event.Type == linebot.EventTypeMessage {
 			switch message := event.Message.(type) {
 			case *linebot.TextMessage:
-
 				c := DbConnect()
 				err = c.Insert(models.Message{UserId: event.Source.UserID, Message: message.Text})
 				if err != nil {
 					panic(err)
 				}
-
-				// if _, err = client.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(message.Text)).Do(); err != nil {
-				// 	log.Println(err.Error())
-				// }
 			}
 		}
 	}
@@ -66,4 +62,15 @@ func SendMessage(context *gin.Context) {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func QueryMessage(context *gin.Context) {
+	c := DbConnect()
+	var messages []models.Message
+	err = c.Find(bson.M{"userid": viper.GetString("LINE.UserId")}).All(&messages)
+	if err != nil {
+		panic(err)
+	}
+
+	context.JSON(200, messages)
 }
