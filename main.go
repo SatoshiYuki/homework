@@ -1,20 +1,18 @@
 package main
 
 import (
-	"homework/services"
-	"net/http"
-
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+	"homework/services"
 )
 
 func main() {
 	initConfig()
 
 	router := gin.Default()
-	router.POST("/homework/recieveMessage", services.RecieveMessage)
-	router.POST("/homework/sendMessage", services.SendMessage)
-	router.GET("/homework/queryMessage", services.QueryMessage)
+	router.PUT("/lineBot/Message", services.RecieveMessage)
+	router.POST("/lineBot/Message", services.SendMessage)
+	router.GET("/lineBot/Message", services.QueryMessage)
 	router.Run(":80")
 
 }
@@ -28,9 +26,9 @@ func initConfig() {
 	}
 }
 
-func test(context *gin.Context) {
-	context.JSON(http.StatusOK, gin.H{
-		"status":  "200",
-		"message": "test123",
-	})
-}
+//func test(context *gin.Context) {
+//	context.JSON(http.StatusOK, gin.H{
+//		"status":  "200",
+//		"message": "test123",
+//	})
+//}
